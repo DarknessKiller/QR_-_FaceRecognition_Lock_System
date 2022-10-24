@@ -1,0 +1,18 @@
+[Unit]
+Description=Auto Delete Old Booking Script
+
+Wants=network.target
+After=syslog.target network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/bash /home/itsgoyoung/QR_and_FaceRecogn-Python/auto_delete_old_booking.sh
+Restart=always
+RestartSec=3600
+RestartSec=3
+StartLimitBurst=5
+StartLimitIntervalSec=0
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target

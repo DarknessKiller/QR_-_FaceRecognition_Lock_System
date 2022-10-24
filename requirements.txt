@@ -1,0 +1,11 @@
+face_recognition
+gpiozero
+imutils
+mysql-connector-python==8.0.29
+numpy
+pyzbar
+opencv-contrib-python
+password
+bcrypt
+timeout-decorator
+
